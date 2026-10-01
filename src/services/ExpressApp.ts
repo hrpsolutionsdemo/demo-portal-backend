@@ -10,7 +10,9 @@ export default async (app: Application) => {
     cors({
       origin: [
         "https://demo-portal-60q4.onrender.com",
+        "https://demo-portal-frontend-k9cv.onrender.com",
         "https://demo-portal-backend-h13a.onrender.com",
+        "https://demo-portal-backend-9k81.onrender.com",
         "http://localhost:3000",
         "http://localhost:3001",
         "http://localhost:5173",

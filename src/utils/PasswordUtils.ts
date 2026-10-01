@@ -4,6 +4,14 @@ import { APP_SECRET } from "../config";
 import { Request } from "express";
 import {AuthPayload} from "../@types/Auth.dto";
 
+declare global {
+    namespace Express {
+        interface Request {
+            user?: AuthPayload;
+        }
+    }
+}
+
 export const GenerateSalt = async () => {
     return await bcrypt.genSalt();
 };
